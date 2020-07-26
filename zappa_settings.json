@@ -1,9 +1,9 @@
 {
-    "production": {
+    "corleone": {
         "app_function": "app.app",
         "profile_name": "synthdecoraws",
         "project_name": "flask-api-lambd",
         "runtime": "python3.6",
-        "s3_bucket": "synthdecor-deploy"
+        "s3_bucket": "corleone-s3"
     }
 }
