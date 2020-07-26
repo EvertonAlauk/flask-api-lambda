@@ -1,10 +1,9 @@
 {
-    "dev": {
+    "production": {
         "app_function": "app.app",
-        "aws_region": "us-east-2",
-        "profile_name": "synthdecor",
+        "profile_name": "synthdecoraws",
         "project_name": "flask-api-lambd",
         "runtime": "python3.6",
-        "s3_bucket": "zappa-uwbhba1mj"
+        "s3_bucket": "synthdecor-deploy"
     }
 }
