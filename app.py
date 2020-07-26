@@ -1,16 +1,9 @@
-import setuptools
-
-from flask import Flask, jsonify
+from flask import Flask
+from apis import api
 
 app = Flask(__name__)
+app.config.from_object('config')
+api.init_app(app)
 
-@app.route('/')
-def hello_world():
-    return jsonify({"message": f"Hello, World!"})
-
-@app.route('/<name>')
-def hello_name(name):
-    return jsonify({"message": f"Hello, {name}!"})
-
-if __name__ == '__main__':
- app.run()
+if __name__ == "__main__":
+    app.run()

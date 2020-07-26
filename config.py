@@ -1,0 +1,2 @@
+RESTPLUS_VALIDATE = True
+DEBUG = True
